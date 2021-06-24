@@ -8,45 +8,45 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>picture</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/steve/Downloads/picture.py">/Users/steve/Downloads/picture.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/steve/teaching/cs150-worksheets/picture.py">/Users/steve/teaching/cs150-worksheets/picture.py</a></font></td></tr></table>
     <p><tt>Create&nbsp;and&nbsp;display&nbsp;simple&nbsp;pictures.&nbsp;Supported&nbsp;color&nbsp;names&nbsp;can&nbsp;be&nbsp;found<br>
 at&nbsp;the&nbsp;bottom&nbsp;of<br>
 <a href="https://pillow.readthedocs.io/en/stable/_modules/PIL/ImageColor.html">https://pillow.readthedocs.io/en/stable/_modules/PIL/ImageColor.html</a><br>
 &nbsp;<br>
 Example&nbsp;usage:<br>
-from&nbsp;picture&nbsp;import&nbsp;*<br>
+import&nbsp;picture<br>
 &nbsp;<br>
-<a href="#-new_picture">new_picture</a>(400,&nbsp;300)&nbsp;&nbsp;#&nbsp;Create&nbsp;a&nbsp;blank,&nbsp;800x600&nbsp;picture<br>
-<a href="#-draw_text">draw_text</a>(200,&nbsp;20,&nbsp;"A&nbsp;fun&nbsp;little&nbsp;picture!",&nbsp;16)<br>
-<a href="#-set_fill_color">set_fill_color</a>("burlywood")<br>
-<a href="#-set_outline_color">set_outline_color</a>("dark&nbsp;red")<br>
-<a href="#-set_pen_width">set_pen_width</a>(8)<br>
+picture.<a href="#-new_picture">new_picture</a>(400,&nbsp;300)&nbsp;&nbsp;#&nbsp;Create&nbsp;a&nbsp;blank,&nbsp;800x600&nbsp;picture<br>
+picture.<a href="#-draw_text">draw_text</a>(200,&nbsp;20,&nbsp;"A&nbsp;fun&nbsp;little&nbsp;picture!",&nbsp;16)<br>
+picture.<a href="#-set_fill_color">set_fill_color</a>("burlywood")<br>
+picture.<a href="#-set_outline_color">set_outline_color</a>("dark&nbsp;red")<br>
+picture.<a href="#-set_pen_width">set_pen_width</a>(8)<br>
 &nbsp;<br>
-<a href="#-fill_rectangle">fill_rectangle</a>(10,&nbsp;30,&nbsp;100,&nbsp;200)<br>
-<a href="#-set_outline_color">set_outline_color</a>("green")<br>
-<a href="#-draw_square">draw_square</a>(20,&nbsp;40,&nbsp;100)<br>
-<a href="#-display">display</a>()<br>
-<a href="#-delay">delay</a>(2000)&nbsp;&nbsp;#&nbsp;Wait&nbsp;for&nbsp;2000&nbsp;ms&nbsp;=&nbsp;2&nbsp;seconds<br>
+picture.<a href="#-fill_rectangle">fill_rectangle</a>(10,&nbsp;30,&nbsp;100,&nbsp;200)<br>
+picture.<a href="#-set_outline_color">set_outline_color</a>("green")<br>
+picture.<a href="#-draw_square">draw_square</a>(20,&nbsp;40,&nbsp;100)<br>
+picture.<a href="#-display">display</a>()<br>
+picture.<a href="#-delay">delay</a>(2000)&nbsp;&nbsp;#&nbsp;Wait&nbsp;for&nbsp;2000&nbsp;ms&nbsp;=&nbsp;2&nbsp;seconds<br>
 &nbsp;<br>
-<a href="#-set_position">set_position</a>(100,&nbsp;150)<br>
-<a href="#-set_outline_color">set_outline_color</a>("purple")<br>
-<a href="#-set_direction">set_direction</a>(0)<br>
-<a href="#-draw_forward">draw_forward</a>(100)<br>
-<a href="#-rotate">rotate</a>(30)<br>
-<a href="#-draw_forward">draw_forward</a>(75)<br>
-<a href="#-rotate">rotate</a>(30)<br>
-<a href="#-draw_forward">draw_forward</a>(50)<br>
-<a href="#-rotate">rotate</a>(30)<br>
-<a href="#-draw_forward">draw_forward</a>(25)<br>
-<a href="#-rotate">rotate</a>(30)<br>
-<a href="#-draw_forward">draw_forward</a>(12)<br>
+picture.<a href="#-set_position">set_position</a>(100,&nbsp;150)<br>
+picture.<a href="#-set_outline_color">set_outline_color</a>("purple")<br>
+picture.<a href="#-set_direction">set_direction</a>(0)<br>
+picture.<a href="#-draw_forward">draw_forward</a>(100)<br>
+picture.<a href="#-rotate">rotate</a>(30)<br>
+picture.<a href="#-draw_forward">draw_forward</a>(75)<br>
+picture.<a href="#-rotate">rotate</a>(30)<br>
+picture.<a href="#-draw_forward">draw_forward</a>(50)<br>
+picture.<a href="#-rotate">rotate</a>(30)<br>
+picture.<a href="#-draw_forward">draw_forward</a>(25)<br>
+picture.<a href="#-rotate">rotate</a>(30)<br>
+picture.<a href="#-draw_forward">draw_forward</a>(12)<br>
 &nbsp;<br>
-<a href="#-set_pen_width">set_pen_width</a>(2)<br>
-<a href="#-set_outline_color">set_outline_color</a>("aquamarine")<br>
-<a href="#-draw_polygon">draw_polygon</a>([(200,&nbsp;100),&nbsp;(250,&nbsp;100),&nbsp;(225,&nbsp;150)])<br>
+picture.<a href="#-set_pen_width">set_pen_width</a>(2)<br>
+picture.<a href="#-set_outline_color">set_outline_color</a>("aquamarine")<br>
+picture.<a href="#-draw_polygon">draw_polygon</a>([(200,&nbsp;100),&nbsp;(250,&nbsp;100),&nbsp;(225,&nbsp;150)])<br>
 &nbsp;<br>
-<a href="#-save_picture">save_picture</a>("example.png")<br>
-<a href="#-display">display</a>()</tt></p>
+picture.<a href="#-save_picture">save_picture</a>("example.png")&nbsp;#&nbsp;Save&nbsp;it&nbsp;to&nbsp;a&nbsp;file<br>
+picture.<a href="#-display">display</a>()</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
@@ -70,196 +70,212 @@ from&nbsp;picture&nbsp;import&nbsp;*<br>
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl><dt><a name="-blank_image"><strong>blank_image</strong></a>(width, height)</dt><dd><tt>Returns&nbsp;a&nbsp;blank&nbsp;image&nbsp;with&nbsp;the&nbsp;given&nbsp;width&nbsp;and&nbsp;height.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-blank_image">blank_image</a>(200,&nbsp;300)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-blank_image">blank_image</a>(200,&nbsp;300)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;y&nbsp;in&nbsp;range&nbsp;(<a href="#-image_height">image_height</a>(image)):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;x&nbsp;in&nbsp;range(<a href="#-image_width">image_width</a>(image)):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pixel">set_pixel</a>(image,&nbsp;x,&nbsp;y,&nbsp;(255,&nbsp;0,&nbsp;0))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_image">draw_image</a>(100,&nbsp;100,&nbsp;image)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pixel">set_pixel</a>(image,&nbsp;x,&nbsp;y,&nbsp;(255,&nbsp;0,&nbsp;0))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_image">draw_image</a>(100,&nbsp;100,&nbsp;image)</tt></dd></dl>
  <dl><dt><a name="-change_picture_size"><strong>change_picture_size</strong></a>(width, height)</dt><dd><tt>Change&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;picture&nbsp;to&nbsp;be&nbsp;width&nbsp;and&nbsp;height.</tt></dd></dl>
  <dl><dt><a name="-delay"><strong>delay</strong></a>(milliseconds)</dt><dd><tt>Pause&nbsp;for&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;milliseconds<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-delay">delay</a>(500)&nbsp;#&nbsp;Half&nbsp;a&nbsp;second</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-delay">delay</a>(500)&nbsp;#&nbsp;Half&nbsp;a&nbsp;second</tt></dd></dl>
  <dl><dt><a name="-display"><strong>display</strong></a>()</dt><dd><tt>Draw&nbsp;the&nbsp;current&nbsp;picture.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-display">display</a>()</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-display">display</a>()</tt></dd></dl>
+ <dl><dt><a name="-draw_arc"><strong>draw_arc</strong></a>(x, y, radius, start, end)</dt><dd><tt>Draw&nbsp;an&nbsp;arc&nbsp;(a&nbsp;portion&nbsp;of&nbsp;a&nbsp;circle).&nbsp;The&nbsp;circle&nbsp;is&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;and<br>
+has&nbsp;the&nbsp;given&nbsp;radius.&nbsp;The&nbsp;portion&nbsp;drawn&nbsp;starts&nbsp;at&nbsp;the&nbsp;start&nbsp;angle<br>
+and&nbsp;ends&nbsp;at&nbsp;the&nbsp;end&nbsp;angle.<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_arc">draw_arc</a>(100,&nbsp;100,&nbsp;25,&nbsp;45,&nbsp;90)&nbsp;#&nbsp;45&nbsp;degrees&nbsp;to&nbsp;90&nbsp;degrees</tt></dd></dl>
+ <dl><dt><a name="-draw_chord"><strong>draw_chord</strong></a>(x, y, radius, start, end)</dt><dd><tt>Draw&nbsp;an&nbsp;arc&nbsp;(a&nbsp;portion&nbsp;of&nbsp;a&nbsp;circle)&nbsp;and&nbsp;connect&nbsp;the&nbsp;two&nbsp;end&nbsp;points&nbsp;with&nbsp;a<br>
+line.&nbsp;The&nbsp;circle&nbsp;is&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;and&nbsp;has&nbsp;the&nbsp;given&nbsp;radius.&nbsp;The<br>
+portion&nbsp;drawn&nbsp;starts&nbsp;at&nbsp;the&nbsp;start&nbsp;angle&nbsp;and&nbsp;ends&nbsp;at&nbsp;the&nbsp;end&nbsp;angle.<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_chord">draw_chord</a>(100,&nbsp;100,&nbsp;25,&nbsp;45,&nbsp;90)&nbsp;#&nbsp;45&nbsp;degrees&nbsp;to&nbsp;90&nbsp;degrees</tt></dd></dl>
  <dl><dt><a name="-draw_circle"><strong>draw_circle</strong></a>(x, y, r)</dt><dd><tt>Draw&nbsp;a&nbsp;circle&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;with&nbsp;radius&nbsp;r&nbsp;in&nbsp;the&nbsp;current&nbsp;outline<br>
 color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_circle">draw_circle</a>(100,&nbsp;200,&nbsp;10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_circle">draw_circle</a>(100,&nbsp;200,&nbsp;10)</tt></dd></dl>
  <dl><dt><a name="-draw_forward"><strong>draw_forward</strong></a>(distance)</dt><dd><tt>Draw&nbsp;a&nbsp;line&nbsp;starting&nbsp;from&nbsp;the&nbsp;current&nbsp;pen&nbsp;position&nbsp;in&nbsp;the&nbsp;current&nbsp;direction<br>
 the&nbsp;given&nbsp;distance.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_direction">set_direction</a>(0)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_position">set_position</a>(100,&nbsp;100)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-rotate">rotate</a>(90)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-rotate">rotate</a>(90)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_direction">set_direction</a>(0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_position">set_position</a>(100,&nbsp;100)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-rotate">rotate</a>(90)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-rotate">rotate</a>(90)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
  <dl><dt><a name="-draw_image"><strong>draw_image</strong></a>(x, y, image)</dt><dd><tt>Draws&nbsp;the&nbsp;image&nbsp;at&nbsp;(x,&nbsp;y).<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-load_image">load_image</a>("pretty_image.png")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;<a href="#-image_width">image_width</a>(image)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;<a href="#-image_height">image_height</a>(image)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-new_picture">new_picture</a>(width,&nbsp;height)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_image">draw_image</a>(0,&nbsp;0,&nbsp;image)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-load_image">load_image</a>("pretty_image.png")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;picture.<a href="#-image_width">image_width</a>(image)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;picture.<a href="#-image_height">image_height</a>(image)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-new_picture">new_picture</a>(width,&nbsp;height)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_image">draw_image</a>(0,&nbsp;0,&nbsp;image)</tt></dd></dl>
  <dl><dt><a name="-draw_line"><strong>draw_line</strong></a>(x1, y1, x2, y2)</dt><dd><tt>Draws&nbsp;a&nbsp;line&nbsp;from&nbsp;(x1,&nbsp;y1)&nbsp;to&nbsp;(x2,&nbsp;y2)&nbsp;using&nbsp;the&nbsp;current&nbsp;outline&nbsp;color&nbsp;and<br>
 pen&nbsp;width.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_line">draw_line</a>(10,&nbsp;20,&nbsp;100,&nbsp;100)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_line">draw_line</a>(10,&nbsp;20,&nbsp;100,&nbsp;100)</tt></dd></dl>
  <dl><dt><a name="-draw_oval"><strong>draw_oval</strong></a>(x, y, hrad, vrad)</dt><dd><tt>Draw&nbsp;an&nbsp;oval&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;with&nbsp;horizantal&nbsp;radius&nbsp;hrad&nbsp;and&nbsp;vertical<br>
 radius&nbsp;vrad<br>
 in&nbsp;the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_oval">draw_oval</a>(100,&nbsp;200,&nbsp;10,&nbsp;20)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_oval">draw_oval</a>(100,&nbsp;200,&nbsp;10,&nbsp;20)</tt></dd></dl>
  <dl><dt><a name="-draw_polygon"><strong>draw_polygon</strong></a>(vertices)</dt><dd><tt>Draw&nbsp;a&nbsp;polygon&nbsp;defined&nbsp;by&nbsp;a&nbsp;list&nbsp;of&nbsp;vertices&nbsp;in&nbsp;the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_polygon">draw_polygon</a>([(10,&nbsp;10),&nbsp;(20,&nbsp;10),&nbsp;(15,&nbsp;20)])</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_polygon">draw_polygon</a>([(10,&nbsp;10),&nbsp;(20,&nbsp;10),&nbsp;(15,&nbsp;20)])</tt></dd></dl>
  <dl><dt><a name="-draw_rectangle"><strong>draw_rectangle</strong></a>(x, y, w, h)</dt><dd><tt>Draw&nbsp;a&nbsp;rectangle&nbsp;with&nbsp;corners&nbsp;(x,&nbsp;y),&nbsp;(x+w,&nbsp;y),&nbsp;(x,&nbsp;y+h),&nbsp;and&nbsp;(x+w,&nbsp;y+h)&nbsp;in<br>
 the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_rectangle">draw_rectangle</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_rectangle">draw_rectangle</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
  <dl><dt><a name="-draw_square"><strong>draw_square</strong></a>(x, y, side)</dt><dd><tt>Draw&nbsp;a&nbsp;square&nbsp;with&nbsp;corners&nbsp;(x,&nbsp;y),&nbsp;(x+side,&nbsp;y),&nbsp;(x,&nbsp;y+side),&nbsp;and<br>
 (x+side,&nbsp;y+side)&nbsp;in&nbsp;the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_square">draw_square</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
- <dl><dt><a name="-draw_text"><strong>draw_text</strong></a>(x, y, text, font_size)</dt><dd><tt>Draws&nbsp;the&nbsp;text&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;using&nbsp;the&nbsp;given&nbsp;font_name&nbsp;and&nbsp;font_size&nbsp;in&nbsp;the<br>
-current&nbsp;outline&nbsp;color.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_square">draw_square</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
+ <dl><dt><a name="-draw_text"><strong>draw_text</strong></a>(x, y, text, font_size)</dt><dd><tt>Draws&nbsp;the&nbsp;text&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;using&nbsp;the&nbsp;font_size&nbsp;in&nbsp;the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_text">draw_text</a>(10,&nbsp;20,&nbsp;"Hello!",&nbsp;"Helvetica",&nbsp;16)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_text">draw_text</a>(10,&nbsp;20,&nbsp;"Hello!",&nbsp;16)</tt></dd></dl>
+ <dl><dt><a name="-fill_chord"><strong>fill_chord</strong></a>(x, y, radius, start, end)</dt><dd><tt>Fill&nbsp;an&nbsp;arc&nbsp;(a&nbsp;portion&nbsp;of&nbsp;a&nbsp;circle)&nbsp;with&nbsp;connected&nbsp;end&nbsp;points&nbsp;in&nbsp;the&nbsp;fill<br>
+color.&nbsp;The&nbsp;circle&nbsp;is&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;and&nbsp;has&nbsp;the&nbsp;given&nbsp;radius.&nbsp;The<br>
+portion&nbsp;drawn&nbsp;starts&nbsp;at&nbsp;the&nbsp;start&nbsp;angle&nbsp;and&nbsp;ends&nbsp;at&nbsp;the&nbsp;end&nbsp;angle.<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_chord">fill_chord</a>(100,&nbsp;100,&nbsp;25,&nbsp;45,&nbsp;90)&nbsp;#&nbsp;45&nbsp;degrees&nbsp;to&nbsp;90&nbsp;degrees</tt></dd></dl>
  <dl><dt><a name="-fill_circle"><strong>fill_circle</strong></a>(x, y, r)</dt><dd><tt>Fill&nbsp;a&nbsp;circle&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;radius&nbsp;r&nbsp;with&nbsp;the&nbsp;current&nbsp;fill&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-fill_circle">fill_circle</a>(100,&nbsp;200,&nbsp;10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_circle">fill_circle</a>(100,&nbsp;200,&nbsp;10)</tt></dd></dl>
  <dl><dt><a name="-fill_oval"><strong>fill_oval</strong></a>(x, y, hrad, vrad)</dt><dd><tt>Fill&nbsp;an&nbsp;oval&nbsp;centered&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;with&nbsp;horizantal&nbsp;radius&nbsp;hrad&nbsp;and&nbsp;vertical<br>
 radius&nbsp;vrad&nbsp;with&nbsp;the&nbsp;current&nbsp;fill&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;draw_oval_fill(100,&nbsp;200,&nbsp;10,&nbsp;20)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_oval">fill_oval</a>(100,&nbsp;200,&nbsp;10,&nbsp;20)</tt></dd></dl>
  <dl><dt><a name="-fill_polygon"><strong>fill_polygon</strong></a>(vertices)</dt><dd><tt>Fill&nbsp;a&nbsp;polygon&nbsp;defined&nbsp;by&nbsp;a&nbsp;list&nbsp;of&nbsp;vertices&nbsp;in&nbsp;the&nbsp;current&nbsp;outline&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-fill_polygon">fill_polygon</a>([(10,&nbsp;10),&nbsp;(20,&nbsp;10),&nbsp;(15,&nbsp;20)])</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_polygon">fill_polygon</a>([(10,&nbsp;10),&nbsp;(20,&nbsp;10),&nbsp;(15,&nbsp;20)])</tt></dd></dl>
  <dl><dt><a name="-fill_rectangle"><strong>fill_rectangle</strong></a>(x, y, w, h)</dt><dd><tt>Fill&nbsp;a&nbsp;rectangle&nbsp;with&nbsp;corners&nbsp;(x,&nbsp;y),&nbsp;(x+w,&nbsp;y),&nbsp;(x,&nbsp;y+h),&nbsp;and&nbsp;(x+w,&nbsp;y+h)<br>
 with&nbsp;the&nbsp;current&nbsp;fill&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-fill_rectangle">fill_rectangle</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_rectangle">fill_rectangle</a>(10,&nbsp;20,&nbsp;100,&nbsp;50)</tt></dd></dl>
  <dl><dt><a name="-fill_square"><strong>fill_square</strong></a>(x, y, side)</dt><dd><tt>Fill&nbsp;a&nbsp;square&nbsp;with&nbsp;corners&nbsp;(x,&nbsp;y),&nbsp;(x+side,&nbsp;y),&nbsp;(x,&nbsp;y+side),&nbsp;and<br>
 (x+side,&nbsp;y+side)&nbsp;with&nbsp;the&nbsp;current&nbsp;fill&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-fill_square">fill_square</a>(10,&nbsp;20,&nbsp;100)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-fill_square">fill_square</a>(10,&nbsp;20,&nbsp;100)</tt></dd></dl>
  <dl><dt><a name="-get_direction"><strong>get_direction</strong></a>()</dt><dd><tt>Return&nbsp;the&nbsp;current&nbsp;drawing&nbsp;direction.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;theta&nbsp;=&nbsp;<a href="#-get_direction">get_direction</a>()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_direction">set_direction</a>(180)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_direction">set_direction</a>(theta)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;theta&nbsp;=&nbsp;picture.<a href="#-get_direction">get_direction</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_direction">set_direction</a>(180)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_direction">set_direction</a>(theta)</tt></dd></dl>
  <dl><dt><a name="-get_fill_color"><strong>get_fill_color</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;current&nbsp;fill&nbsp;color.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;current_color&nbsp;=&nbsp;<a href="#-get_fill_color">get_fill_color</a>()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>("red")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_color&nbsp;=&nbsp;picture.<a href="#-get_fill_color">get_fill_color</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_fill_color">set_fill_color</a>("red")<br>
 &nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Do&nbsp;some&nbsp;drawing&nbsp;in&nbsp;red.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>(current_color)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_fill_color">set_fill_color</a>(current_color)</tt></dd></dl>
  <dl><dt><a name="-get_outline_color"><strong>get_outline_color</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;current&nbsp;outline&nbsp;color&nbsp;as&nbsp;a&nbsp;(red,&nbsp;green,&nbsp;blue)&nbsp;triple.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;current_color&nbsp;=&nbsp;<a href="#-get_outline_color">get_outline_color</a>()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_outline_color">set_outline_color</a>("red")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_color&nbsp;=&nbsp;picture.<a href="#-get_outline_color">get_outline_color</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_outline_color">set_outline_color</a>("red")<br>
 &nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Do&nbsp;some&nbsp;drawing&nbsp;in&nbsp;red&nbsp;outline.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_outline_color">set_outline_color</a>(current_color)</tt></dd></dl>
- <dl><dt><a name="-get_pen_width"><strong>get_pen_width</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;current&nbsp;pen&nbsp;width.</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_outline_color">set_outline_color</a>(current_color)</tt></dd></dl>
+ <dl><dt><a name="-get_pen_width"><strong>get_pen_width</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;current&nbsp;pen&nbsp;width.<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;picture.<a href="#-get_pen_width">get_pen_width</a>()</tt></dd></dl>
  <dl><dt><a name="-get_pixel"><strong>get_pixel</strong></a>(image, x, y)</dt><dd><tt>Returns&nbsp;the&nbsp;pixel&nbsp;at&nbsp;(x,&nbsp;y)&nbsp;as&nbsp;a&nbsp;(red,&nbsp;green,&nbsp;blue)&nbsp;tuple.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-load_image">load_image</a>("pretty_image.png")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;=&nbsp;<a href="#-get_pixel">get_pixel</a>(image,&nbsp;0,&nbsp;0)&nbsp;#&nbsp;Top&nbsp;left&nbsp;pixel</tt></dd></dl>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-load_image">load_image</a>("pretty_image.png")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;=&nbsp;picture.<a href="#-get_pixel">get_pixel</a>(image,&nbsp;0,&nbsp;0)&nbsp;#&nbsp;Top&nbsp;left&nbsp;pixel</tt></dd></dl>
  <dl><dt><a name="-get_position"><strong>get_position</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;current&nbsp;drawing&nbsp;position.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;=&nbsp;<a href="#-get_position">get_position</a>()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_position">set_position</a>(10,&nbsp;20)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;=&nbsp;picture.<a href="#-get_position">get_position</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_position">set_position</a>(10,&nbsp;20)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Perform&nbsp;some&nbsp;drawing&nbsp;at&nbsp;(10,&nbsp;20)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_position">set_position</a>(pos)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_position">set_position</a>(pos)</tt></dd></dl>
  <dl><dt><a name="-image_height"><strong>image_height</strong></a>(image)</dt><dd><tt>Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;pixels&nbsp;in&nbsp;each&nbsp;column&nbsp;of&nbsp;the&nbsp;image.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-load_image">load_image</a>("pretty_image.png")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;<a href="#-image_width">image_width</a>(image)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;<a href="#-image_height">image_height</a>(image)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-load_image">load_image</a>("pretty_image.png")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;picture.<a href="#-image_width">image_width</a>(image)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;picture.<a href="#-image_height">image_height</a>(image)</tt></dd></dl>
  <dl><dt><a name="-image_width"><strong>image_width</strong></a>(image)</dt><dd><tt>Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;pixels&nbsp;in&nbsp;each&nbsp;row&nbsp;of&nbsp;the&nbsp;image.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-load_image">load_image</a>("pretty_image.png")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;<a href="#-image_width">image_width</a>(image)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;<a href="#-image_height">image_height</a>(image)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-load_image">load_image</a>("pretty_image.png")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;=&nbsp;picture.<a href="#-image_width">image_width</a>(image)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;=&nbsp;picture.<a href="#-image_height">image_height</a>(image)</tt></dd></dl>
  <dl><dt><a name="-load_image"><strong>load_image</strong></a>(path)</dt><dd><tt>Create&nbsp;an&nbsp;image&nbsp;by&nbsp;loading&nbsp;it&nbsp;from&nbsp;the&nbsp;file&nbsp;system&nbsp;at&nbsp;the&nbsp;given&nbsp;path.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-load_image">load_image</a>("pretty_image.png")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_image">draw_image</a>(100,&nbsp;100,&nbsp;image)&nbsp;#&nbsp;Draws&nbsp;the&nbsp;image&nbsp;at&nbsp;(100,&nbsp;100).</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-load_image">load_image</a>("pretty_image.png")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_image">draw_image</a>(100,&nbsp;100,&nbsp;image)&nbsp;#&nbsp;Draws&nbsp;the&nbsp;image&nbsp;at&nbsp;(100,&nbsp;100).</tt></dd></dl>
  <dl><dt><a name="-new_picture"><strong>new_picture</strong></a>(width, height)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;picture&nbsp;with&nbsp;the&nbsp;given&nbsp;width&nbsp;and&nbsp;height,&nbsp;clearing&nbsp;the&nbsp;existing<br>
 one.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-new_picture">new_picture</a>(800,&nbsp;600)&nbsp;#&nbsp;Creates&nbsp;an&nbsp;800&nbsp;x&nbsp;600&nbsp;blank&nbsp;picture</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-new_picture">new_picture</a>(800,&nbsp;600)&nbsp;#&nbsp;Creates&nbsp;an&nbsp;800&nbsp;x&nbsp;600&nbsp;blank&nbsp;picture</tt></dd></dl>
  <dl><dt><a name="-parse_color"><strong>parse_color</strong></a>(*color)</dt><dd><tt>Parses&nbsp;the&nbsp;various&nbsp;ways&nbsp;colors&nbsp;may&nbsp;be&nbsp;specified&nbsp;and&nbsp;returns&nbsp;a<br>
 (red,&nbsp;green,&nbsp;blue)&nbsp;tuple.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-parse_color">parse_color</a>("aquamarine")&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;returns&nbsp;(127,&nbsp;255,&nbsp;212)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-parse_color">parse_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige";&nbsp;returns&nbsp;(245,&nbsp;245,&nbsp;220)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-parse_color">parse_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;"CadetBlue";&nbsp;returns&nbsp;(95,&nbsp;158,&nbsp;160)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-parse_color">parse_color</a>("#FF802A")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;returns&nbsp;(255,&nbsp;128,&nbsp;42)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-parse_color">parse_color</a>("aquamarine")&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;returns&nbsp;(127,&nbsp;255,&nbsp;212)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-parse_color">parse_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige";&nbsp;returns&nbsp;(245,&nbsp;245,&nbsp;220)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-parse_color">parse_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;"CadetBlue";&nbsp;returns&nbsp;(95,&nbsp;158,&nbsp;160)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-parse_color">parse_color</a>("#FF802A")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;returns&nbsp;(255,&nbsp;128,&nbsp;42)</tt></dd></dl>
  <dl><dt><a name="-rotate"><strong>rotate</strong></a>(theta)</dt><dd><tt>Rotate&nbsp;the&nbsp;current&nbsp;drawing&nbsp;direction&nbsp;by&nbsp;theta&nbsp;degrees.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-rotate">rotate</a>(45)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-rotate">rotate</a>(-45)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-rotate">rotate</a>(45)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-rotate">rotate</a>(-45)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
  <dl><dt><a name="-run"><strong>run</strong></a>()</dt><dd><tt>Runs&nbsp;the&nbsp;program&nbsp;until&nbsp;the&nbsp;window&nbsp;is&nbsp;closed.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-new_picture">new_picture</a>(800,&nbsp;600)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_rectangle">draw_rectangle</a>(100,&nbsp;100,&nbsp;50,&nbsp;50)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-run">run</a>()</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-new_picture">new_picture</a>(800,&nbsp;600)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_rectangle">draw_rectangle</a>(100,&nbsp;100,&nbsp;50,&nbsp;50)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-run">run</a>()</tt></dd></dl>
  <dl><dt><a name="-save_image"><strong>save_image</strong></a>(image, path)</dt><dd><tt>Save&nbsp;an&nbsp;image&nbsp;by&nbsp;writing&nbsp;it&nbsp;to&nbsp;the&nbsp;file&nbsp;system.<br>
 WARNING:&nbsp;This&nbsp;_will_&nbsp;overwrite&nbsp;existing&nbsp;files&nbsp;so&nbsp;be&nbsp;CAREFUL!<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;<a href="#-blank_image">blank_image</a>(200,&nbsp;200)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image&nbsp;=&nbsp;picture.<a href="#-blank_image">blank_image</a>(200,&nbsp;200)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;idx&nbsp;in&nbsp;range(200):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pixel">set_pixel</a>(image,&nbsp;idx,&nbsp;idx,&nbsp;(25,&nbsp;183,&nbsp;200))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-save_image">save_image</a>("fancy.png")</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pixel">set_pixel</a>(image,&nbsp;idx,&nbsp;idx,&nbsp;(25,&nbsp;183,&nbsp;200))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-save_image">save_image</a>("fancy.png")</tt></dd></dl>
  <dl><dt><a name="-save_picture"><strong>save_picture</strong></a>(path)</dt><dd><tt>Save&nbsp;the&nbsp;current&nbsp;picture&nbsp;to&nbsp;a&nbsp;file.<br>
 WARNING:&nbsp;This&nbsp;_will_&nbsp;overwrite&nbsp;existing&nbsp;files&nbsp;so&nbsp;be&nbsp;CAREFUL!<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-new_picture">new_picture</a>(100,&nbsp;100)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_rectangle">draw_rectangle</a>(10,&nbsp;10,&nbsp;50,&nbsp;50)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-save_picture">save_picture</a>("rectangle.png")</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-new_picture">new_picture</a>(100,&nbsp;100)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_rectangle">draw_rectangle</a>(10,&nbsp;10,&nbsp;50,&nbsp;50)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-save_picture">save_picture</a>("rectangle.png")</tt></dd></dl>
  <dl><dt><a name="-set_direction"><strong>set_direction</strong></a>(theta)</dt><dd><tt>Set&nbsp;the&nbsp;current&nbsp;drawing&nbsp;direction&nbsp;to&nbsp;theta&nbsp;degrees.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_direction">set_direction</a>(45)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(20)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_direction">set_direction</a>(45)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(20)</tt></dd></dl>
  <dl><dt><a name="-set_fill_color"><strong>set_fill_color</strong></a>(*color)</dt><dd><tt>Set&nbsp;the&nbsp;fill&nbsp;color.&nbsp;The&nbsp;arguments&nbsp;are&nbsp;one&nbsp;of&nbsp;a&nbsp;string&nbsp;naming&nbsp;the&nbsp;color,<br>
 a&nbsp;(red,&nbsp;green,&nbsp;blue)&nbsp;tuple,&nbsp;or&nbsp;three&nbsp;arguments&nbsp;specifying&nbsp;red,&nbsp;green,&nbsp;and<br>
 blue.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>("aquamarine")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;#&nbsp;"CadetBlue"</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_fill_color">set_fill_color</a>("aquamarine")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_fill_color">set_fill_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_fill_color">set_fill_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;#&nbsp;"CadetBlue"</tt></dd></dl>
  <dl><dt><a name="-set_outline_color"><strong>set_outline_color</strong></a>(*color)</dt><dd><tt>Set&nbsp;the&nbsp;outline&nbsp;color.&nbsp;The&nbsp;arguments&nbsp;are&nbsp;one&nbsp;of&nbsp;a&nbsp;string&nbsp;naming&nbsp;the&nbsp;color,<br>
 a&nbsp;(red,&nbsp;green,&nbsp;blue)&nbsp;tuple,&nbsp;or&nbsp;three&nbsp;arguments&nbsp;specifying&nbsp;red,&nbsp;green,&nbsp;and<br>
 blue.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>("aquamarine")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_fill_color">set_fill_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;#&nbsp;"CadetBlue"</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_outline_color">set_outline_color</a>("aquamarine")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_outline_color">set_outline_color</a>((245,&nbsp;245,&nbsp;220))&nbsp;#&nbsp;"beige"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_outline_color">set_outline_color</a>(95,&nbsp;158,&nbsp;160)&nbsp;#&nbsp;"CadetBlue"</tt></dd></dl>
  <dl><dt><a name="-set_pen_width"><strong>set_pen_width</strong></a>(width)</dt><dd><tt>Set&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;pen.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pen_width">set_pen_width</a>(10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pen_width">set_pen_width</a>(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-draw_forward">draw_forward</a>(10)</tt></dd></dl>
  <dl><dt><a name="-set_pen_x"><strong>set_pen_x</strong></a>(x)</dt><dd><tt>Set&nbsp;the&nbsp;x-coordinate&nbsp;of&nbsp;the&nbsp;pen's&nbsp;position.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pen_x">set_pen_x</a>(10)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pen_x">set_pen_x</a>(10)</tt></dd></dl>
  <dl><dt><a name="-set_pen_y"><strong>set_pen_y</strong></a>(y)</dt><dd><tt>Set&nbsp;the&nbsp;y-coordinate&nbsp;of&nbsp;the&nbsp;pen's&nbsp;position.<br>
 Example:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pen_y">set_pen_y</a>(20)</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pen_y">set_pen_y</a>(20)</tt></dd></dl>
  <dl><dt><a name="-set_pixel"><strong>set_pixel</strong></a>(image, x, y, *color)</dt><dd><tt>Sets&nbsp;the&nbsp;pixel&nbsp;at&nbsp;location&nbsp;(x,&nbsp;y)&nbsp;in&nbsp;image&nbsp;to&nbsp;be&nbsp;color.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pixel">set_pixel</a>(image,&nbsp;10,&nbsp;10,&nbsp;"red")<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pixel">set_pixel</a>(image,&nbsp;20,&nbsp;15,&nbsp;(123,&nbsp;255,&nbsp;0))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_pixel">set_pixel</a>(image,&nbsp;100,&nbsp;10,&nbsp;0,&nbsp;0,&nbsp;0)&nbsp;#&nbsp;black</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pixel">set_pixel</a>(image,&nbsp;10,&nbsp;10,&nbsp;"red")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pixel">set_pixel</a>(image,&nbsp;20,&nbsp;15,&nbsp;(123,&nbsp;255,&nbsp;0))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_pixel">set_pixel</a>(image,&nbsp;100,&nbsp;10,&nbsp;0,&nbsp;0,&nbsp;0)&nbsp;#&nbsp;black</tt></dd></dl>
  <dl><dt><a name="-set_position"><strong>set_position</strong></a>(*position)</dt><dd><tt>Set&nbsp;the&nbsp;current&nbsp;drawing&nbsp;position.<br>
 Examples:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_position">set_position</a>(10,&nbsp;20)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-set_position">set_position</a>((10,&nbsp;20))</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_position">set_position</a>(10,&nbsp;20)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;picture.<a href="#-set_position">set_position</a>((10,&nbsp;20))</tt></dd></dl>
 </td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
@@ -267,5 +283,5 @@ Examples:<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>__all__</strong> = ['blank_image', 'change_picture_size', 'delay', 'display', 'draw_circle', 'draw_forward', 'draw_image', 'draw_line', 'draw_oval', 'draw_polygon', 'draw_rectangle', 'draw_square', 'draw_text', 'fill_circle', 'fill_oval', 'fill_polygon', 'fill_rectangle', 'fill_square', 'get_direction', 'get_fill_color', ...]</td></tr></table>
+<td width="100%"><strong>__all__</strong> = ['blank_image', 'change_picture_size', 'delay', 'display', 'draw_arc', 'draw_chord', 'draw_circle', 'draw_forward', 'draw_image', 'draw_line', 'draw_oval', 'draw_polygon', 'draw_rectangle', 'draw_square', 'draw_text', 'fill_chord', 'fill_circle', 'fill_oval', 'fill_polygon', 'fill_rectangle', ...]</td></tr></table>
 </body></html>
